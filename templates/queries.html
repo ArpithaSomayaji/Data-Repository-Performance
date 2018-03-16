@@ -1,0 +1,159 @@
+    <html>
+    <head>
+        <title>AWS Database</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/stylesheets/style.css">
+    </head>
+
+    <body>
+    <div class="container">
+
+        <div class="header">
+            <h1><b>
+                <center> Welcome to Database Storage</center>
+
+            </b></h1>
+            <center><h3>Arpitha Somayaji 1001398103</h3></center>
+            <h4><center><a href="queries">Home</a></center></h4>
+            <h4><center><a href="/">Upload File</a></center></h4>
+            <div>
+				<form action="logout" method="post">
+					<center>
+						<input type="submit" value="logout">
+					</center>
+				</form>
+			</div>
+
+
+        </div>
+        <br/>
+        <br/>
+        <form action="/runRandQueries" method="post" enctype="multipart/form-data">
+            <h3 class="text-muted">RUN number of random queries (up to 1000 queries of random tuples in the dataset)</h3>
+            {% if resultTables %}
+            <select name="Dbtable">
+            {% for data in resultTables %}
+                <option value="{{data}}">{{data}}</option>
+                {% endfor %}
+
+            </select>
+            {% endif %}
+
+            Random Query Count ( within 1000 ) :<input type="text" name="randQueryCount">
+            <input type="submit" value="Run">
+        </form>
+
+
+    {%if resultText%}
+            <h3>{{resultText}}  </h3>
+           {% endif %}
+
+    <br/>
+    <hr/>
+
+         <form action="/Locations" method="post" enctype="multipart/form-data">
+            <h3 class="text-muted">Get Records of earthquakes in a particular Location for EarthQuakes Data</h3>
+            Location :<input type="text" name="Location">
+            <input type="submit" value="Execute">
+        </form>
+
+    <table border="1">
+
+    {%if resultText1%}
+        {%if resultTextTotalRecords %}
+        <tr> Total records : {{resultTextTotalRecords}}</tr>
+        {% endif %}
+        {% for data in resultText1 %}
+        <td>
+            <h4>Time : {{data.time}}  </h4>
+          <h4>Latitude : {{data.latitude}}  </h4>
+          <h4>Longitude : {{data.longitude}}  </h4>
+          <h4>Depth : {{data.depth}}  </h4>
+        <h4>Magnitude : {{data.mag}}  </h4>
+          <h4>Place : {{data.place}}  </h4>
+            </td>
+
+         {% endfor %}
+           {% endif %}
+    </table>
+        {%if LocationQueryTime%}
+            <h3>{{LocationQueryTime}}  </h3>
+           {% endif %}
+
+
+    <br/>
+    <hr/>
+    <form action="/LocationsDist" method="post" enctype="multipart/form-data">
+            <h3 class="text-muted">Get Records of Starbucks  of a specified lat,long location</h3>
+            Location Latitude :<input type="text" name="LocationLatitude">
+            Location Longitude : <input type="text" name="LocationLongitude">
+        Location Latitude 2 :<input type="text" name="LocationLatitude2">
+            Location Longitude 2: <input type="text" name="LocationLongitude2">
+            <
+            <input type="submit" value="Execute">
+        </form>
+
+    <table border="1">
+    {%if resultText2%}
+        {%if resultTextTotalRecords2 %}
+        <tr> <h3>Records of earthquakes within N<100 km of a specified lat,long location : {{resultTextTotalRecords2}}</h3></tr>
+        {% endif %}
+        {% for data in resultText2 %}
+        <td>
+            <h4>id : {{data.id}}  </h4>
+          <h4>Latitude : {{data.latitude}}  </h4>
+          <h4>Longitude : {{data.longitude}}  </h4>
+        <h4> Name : {{data.Name }}</h4>
+        <h4>StoreNumber : {{data.StoreNumber}}  </h4>
+
+            </td>
+
+         {% endfor %}
+           {% endif %}
+    </table>
+        {%if LocationLatLongTime%}
+            <h3>{{LocationLatLongTime}}   </h3>
+           {% endif %}
+
+
+    <br/>
+    <hr/>
+
+        <form action="/MagnitudeRange" method="post" enctype="multipart/form-data">
+            <h3 class="text-muted">Get Records of earthquakes within Specified Magnitude Range</h3>
+             Range From :<input type="text" name="RangeFrom">
+            Range To : <input type="text" name="RangeTo">
+            <input type="submit" value="Execute">
+        </form>
+
+    <table border="1">
+    {%if resultText3%}
+        {%if resultTextTotalRecords3 %}
+        <tr> <h3>Records of earthquakes  within Specified Magnitude Range : {{resultTextTotalRecords3}}</h3></tr>
+        {% endif %}
+        {% for data in resultText3 %}
+        <td>
+            <h4>Time : {{data.time}}  </h4>
+          <h4>Latitude : {{data.latitude}}  </h4>
+          <h4>Longitude : {{data.longitude}}  </h4>
+          <h4>Depth : {{data.depth}}  </h4>
+        <h4>Magnitude : {{data.mag}}  </h4>
+          <h4>Place : {{data.place}}  </h4>
+
+                       </td>
+
+         {% endfor %}
+           {% endif %}
+    </table>
+        {%if MagnitudeTime%}
+            <h3>{{MagnitudeTime}}   </h3>
+           {% endif %}
+
+
+    <br/>
+    <hr/>
+    </div>
+    </body>
+    </html>

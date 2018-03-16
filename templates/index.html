@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>AWS Database</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">
+        <h1><b>
+            <center> Welcome to Database Storage</center>
+        </b></h1>
+        <div>
+				<form action="logout" method="post">
+					<center>
+						<input type="submit" value="logout">
+					</center>
+				</form>
+			</div>
+
+
+
+    </div>
+    <h2> File to Upload </h2>
+    <form action="/uploader" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit">
+
+
+    </form>
+
+{%if resultText%}
+        <h5>{{resultText}}  </h5>
+       {% endif %}
+<div class="header">
+				<center>
+				<h1 class="text-muted"><center><a href='queries'>Queries </a></center></h1></center>
+			</div>
+</div>
+</body>
+</html>

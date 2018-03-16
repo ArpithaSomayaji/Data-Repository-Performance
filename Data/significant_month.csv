@@ -1,0 +1,15 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-02-19T06:57:01.830Z,16.4993,-97.579,40.17,5.9,mww,,120,1.418,0.93,us,us2000d4lg,2018-02-24T00:45:36.561Z,"32km NE of Santa Catarina Mechoacan, Mexico",earthquake,6.9,5.1,0.05,39,reviewed,us,us
+2018-02-17T14:31:04.910Z,51.7071,-3.8727,11.01,4.2,mb,,122,2.172,1.41,us,us2000d3uw,2018-02-23T23:30:55.921Z,"3km NE of Clydach, United Kingdom",earthquake,7.3,5.9,0.2,7,reviewed,us,us
+2018-02-17T00:36:53.650Z,16.2069,-97.7509,8.87,5.8,mww,,143,1.558,1.17,us,us2000d3m0,2018-02-19T07:37:08.440Z,"10km SE of Santiago Jamiltepec, Mexico",earthquake,7.2,4,0.073,18,reviewed,us,us
+2018-02-16T23:39:42.210Z,16.6459,-97.653,24.65,7.2,mww,,80,1.262,1.37,us,us2000d3km,2018-02-23T22:26:22.275Z,"37km NE of Pinotepa de Don Luis, Mexico",earthquake,5,2.4,0.073,18,reviewed,us,us
+2018-02-15T14:28:55.590Z,42.9209,-71.012,6.25,2.7,mb_lg,,126,0.202,0.48,us,us2000d2m8,2018-02-22T17:45:44.208Z,"0km SE of East Kingston, New Hampshire",earthquake,1.9,5.5,0.079,42,reviewed,us,us
+2018-02-09T14:05:48.210Z,18.9839,-104.6315,12,5.8,mww,,89,3.281,1.47,us,us2000czig,2018-02-23T08:50:47.805Z,"26km SSE of San Patricio, Mexico",earthquake,5,1.6,0.044,49,reviewed,us,us
+2018-02-06T15:50:43.300Z,24.1359,121.658,17,6.4,mww,,34,0.069,0.9,us,us1000chhc,2018-02-22T17:47:30.416Z,"18km NNE of Hualian, Taiwan",earthquake,2.6,1.6,0.047,44,reviewed,us,us
+2018-02-04T13:56:41.950Z,24.1572,121.7078,12,6.1,mww,,30,0.104,0.87,us,us1000cfn6,2018-02-23T16:41:07.507Z,"22km NNE of Hualian, Taiwan",earthquake,5.5,1.7,0.047,43,reviewed,us,us
+2018-01-31T07:07:00.230Z,36.5432,70.8155,191.19,6.1,mww,,28,0.612,0.72,us,us2000crmu,2018-02-21T17:26:04.362Z,"35km S of Jarm, Afghanistan",earthquake,4.8,5.5,0.059,28,reviewed,us,us
+2018-01-28T16:03:03.970Z,-53.0623,9.6842,10,6.6,mww,,27,19.475,0.61,us,us2000cqnn,2018-02-11T20:56:41.153Z,"Southwest of Africa",earthquake,10.3,1.8,0.055,32,reviewed,us,us
+2018-01-26T22:47:57.760Z,-3.5138,145.8477,10,6.3,mww,,18,2.105,0.7,us,us2000cq5t,2018-01-31T18:34:13.861Z,"189km N of Madang, Papua New Guinea",earthquake,6.8,1.7,0.065,23,reviewed,us,us
+2018-01-26T03:32:08.150Z,42.5654,-111.4823,10,4.3,mb,,85,0.127,0.72,us,us2000cpkg,2018-01-31T18:41:05.035Z,"14km SE of Soda Springs, Idaho",earthquake,2.9,2,0.108,24,reviewed,us,us
+2018-01-25T16:39:43.500Z,40.4556,-126.3332,8.88,5.8,mww,,41,1.522,1.01,us,us2000cpba,2018-02-23T21:28:44.599Z,"175km W of Ferndale, California",earthquake,5.3,3.1,0.039,62,reviewed,us,us
+2018-01-25T10:09:56.810Z,33.741,-117.4911667,11.15,3.97,mw,198,22,0.02263,0.25,ci,ci38092312,2018-02-15T02:11:25.078Z,"12km NE of Trabuco Canyon, CA",earthquake,0.11,0.22,,6,reviewed,ci,ci
